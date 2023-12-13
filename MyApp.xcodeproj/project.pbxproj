@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81489D942B2A2A0200A45CF8 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81489D932B2A2A0200A45CF8 /* PlaceAnnotation.swift */; };
+		81489D972B2A2B6400A45CF8 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81489D962B2A2B6400A45CF8 /* CLLocation+Extensions.swift */; };
+		81489D9A2B2A3C7600A45CF8 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81489D992B2A3C7600A45CF8 /* PlacesTableViewController.swift */; };
+		81489D9C2B2A4F2F00A45CF8 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81489D9B2B2A4F2F00A45CF8 /* PlaceDetailViewController.swift */; };
+		81489D9E2B2A5A0D00A45CF8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81489D9D2B2A5A0D00A45CF8 /* String+Extensions.swift */; };
 		818D833C2B28BF5300A045B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D833B2B28BF5300A045B8 /* AppDelegate.swift */; };
 		818D833E2B28BF5300A045B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D833D2B28BF5300A045B8 /* SceneDelegate.swift */; };
 		818D83402B28BF5300A045B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D833F2B28BF5300A045B8 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81489D932B2A2A0200A45CF8 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		81489D962B2A2B6400A45CF8 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		81489D992B2A3C7600A45CF8 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		81489D9B2B2A4F2F00A45CF8 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		81489D9D2B2A5A0D00A45CF8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		818D83382B28BF5300A045B8 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818D833B2B28BF5300A045B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818D833D2B28BF5300A045B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81489D922B2A29A900A45CF8 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				81489D932B2A2A0200A45CF8 /* PlaceAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		81489D952B2A2B3900A45CF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81489D962B2A2B6400A45CF8 /* CLLocation+Extensions.swift */,
+				81489D9D2B2A5A0D00A45CF8 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81489D982B2A3C1000A45CF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				818D833F2B28BF5300A045B8 /* ViewController.swift */,
+				81489D992B2A3C7600A45CF8 /* PlacesTableViewController.swift */,
+				81489D9B2B2A4F2F00A45CF8 /* PlaceDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		818D832F2B28BF5300A045B8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +93,11 @@
 		818D833A2B28BF5300A045B8 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				81489D952B2A2B3900A45CF8 /* Extensions */,
+				81489D982B2A3C1000A45CF8 /* Controllers */,
+				81489D922B2A29A900A45CF8 /* Annotations */,
 				818D833B2B28BF5300A045B8 /* AppDelegate.swift */,
 				818D833D2B28BF5300A045B8 /* SceneDelegate.swift */,
-				818D833F2B28BF5300A045B8 /* ViewController.swift */,
 				818D83412B28BF5300A045B8 /* Main.storyboard */,
 				818D83442B28BF5400A045B8 /* Assets.xcassets */,
 				818D83462B28BF5400A045B8 /* LaunchScreen.storyboard */,
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81489D942B2A2A0200A45CF8 /* PlaceAnnotation.swift in Sources */,
+				81489D972B2A2B6400A45CF8 /* CLLocation+Extensions.swift in Sources */,
+				81489D9C2B2A4F2F00A45CF8 /* PlaceDetailViewController.swift in Sources */,
 				818D83402B28BF5300A045B8 /* ViewController.swift in Sources */,
+				81489D9E2B2A5A0D00A45CF8 /* String+Extensions.swift in Sources */,
 				818D833C2B28BF5300A045B8 /* AppDelegate.swift in Sources */,
 				818D833E2B28BF5300A045B8 /* SceneDelegate.swift in Sources */,
+				81489D9A2B2A3C7600A45CF8 /* PlacesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
